@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_blood_sugar"
+        android:title="Blood Sugar" />
+    <item
+        android:id="@+id/menu_insulin"
+        android:title="Insulin" />
+</menu>

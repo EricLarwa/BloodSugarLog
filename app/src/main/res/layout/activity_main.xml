@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Main Page"
+        android:background="?android:attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TableLayout
+        android:id="@+id/tbl_weekly_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:stretchColumns="*"
+        android:padding="16dp">
+
+        <TableRow>
+            <TextView android:text="Date" />
+            <TextView android:text="Meal Time" />
+            <TextView android:text="Blood Sugar (mg/dL)" />
+            <TextView android:text="Insulin (u)" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_add_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Entry"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
